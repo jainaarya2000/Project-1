@@ -1,32 +1,26 @@
 {
-  "name": "unified-government-digital-platform",
-  "version": "1.0.0",
-  "description": "Unified Government Digital Platform – Middleware Layer for Cross-Department Digital Service Delivery",
-  "main": "server/server.js",
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "server": "node server/server.js",
-    "client": "npm --prefix client run dev",
-    "build": "npm --prefix client run build",
-    "start": "node server/server.js",
-    "seed": "node -e \"require('./server/src/seed/seedData').seedInitialData()\""
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "interoperability",
-    "e-governance",
-    "middleware",
-    "connectors",
-    "consent",
-    "unified-platform"
-  ],
-  "author": "Aarya Jain & Aashiya Khan, Medicaps University",
-  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.6",
-    "dotenv": "^18.0.10",
-    "express": "^5.3.0",
-    "jsonwebtoken": "^9.0.3",
-    "morgan": "^1.12.1",
-    "uuid": "^14.0.3"
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^6.1.2",
+    "lucide-react": "^1.76.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "oxlint": "^1.90.0"
   }
 }
